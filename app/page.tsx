@@ -1,11 +1,12 @@
 import Link from "next/link"
-import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowRight, Download, Github } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { ProjectCard } from "@/components/project-card"
 import { SkillBadge } from "@/components/skill-badge"
 import { MainSidebar } from "@/components/main-sidebar"
 import { TypewriterText } from "@/components/typewriter-text"
+import { InteractiveBackground } from "@/components/interactive-background"
 
 export default function Home() {
   return (
@@ -15,13 +16,15 @@ export default function Home() {
         <MainSidebar />
 
         {/* Main Content */}
-        <main className="overflow-x-hidden">
+        <main className="overflow-x-hidden relative">
+          <InteractiveBackground />
+
           {/* Hero Section */}
-          <section className="py-12 md:py-24 lg:py-32 px-8 max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <section className="py-12 md:py-24 px-8 max-w-7xl mx-auto text-center lg:py-72 relative z-10">
+            <div className="flex flex-col gap-8 md:gap-12 items-center md:flex-col">
               <div className="flex-1 space-y-4">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-mono">
-                  Hi, I'm <span className="text-gradient">Thomas Zeng</span>
+                  Hi, I'm <span className="text-gradient">Thomas</span>
                 </h1>
                 <div className="text-xl text-muted-foreground font-mono min-h-[3rem]">
                   <TypewriterText
@@ -29,60 +32,22 @@ export default function Home() {
                     speed={30}
                   />
                 </div>
-                <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                  <Button size="lg" asChild className="font-mono purple-glow">
+                <div className="flex flex-col gap-3 pt-4 text-center items-center sm:flex-col">
+                  <Button size="lg" asChild className="font-mono purple-glow text-left">
                     <Link href="#projects">
                       View My Work <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    asChild
-                    className="font-mono bg-transparent border-primary/30 hover:border-primary"
-                  >
-                    <Link href="/resume.pdf" target="_blank">
-                      Download CV <Download className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
-                <div className="flex gap-4 pt-4">
-                  <Link href="https://github.com/thomasz5" target="_blank" rel="noopener noreferrer">
-                    <Button size="icon" variant="ghost" className="hover:bg-primary/20">
-                      <Github className="h-5 w-5" />
-                      <span className="sr-only">GitHub</span>
-                    </Button>
-                  </Link>
-                  <Link href="https://www.linkedin.com/in/thomasz5" target="_blank" rel="noopener noreferrer">
-                    <Button size="icon" variant="ghost" className="hover:bg-primary/20">
-                      <Linkedin className="h-5 w-5" />
-                      <span className="sr-only">LinkedIn</span>
-                    </Button>
-                  </Link>
-                  <Link href="mailto:thomaszeng05@gmail.com">
-                    <Button size="icon" variant="ghost" className="hover:bg-primary/20">
-                      <Mail className="h-5 w-5" />
-                      <span className="sr-only">Email</span>
-                    </Button>
-                  </Link>
                 </div>
               </div>
-              <div className="flex-1 flex justify-center">
-                <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] rounded-full overflow-hidden border-4 border-primary purple-glow">
-                  <img
-                    src="/placeholder.svg?height=320&width=320"
-                    alt="Thomas Zeng"
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-              </div>
+              <div className="flex-1 flex justify-center"></div>
             </div>
           </section>
 
           {/* About Section */}
           <section
             id="about"
-            className="py-12 md:py-24 lg:py-32 px-8 max-w-7xl mx-auto section-gradient rounded-3xl my-12"
+            className="py-12 md:py-24 lg:py-32 px-8 max-w-7xl mx-auto section-gradient rounded-3xl my-12 relative z-10"
           >
             <div className="space-y-6 md:space-y-12">
               <div className="flex flex-col items-center space-y-4 text-center">
@@ -126,7 +91,7 @@ export default function Home() {
           </section>
 
           {/* Projects Section */}
-          <section id="projects" className="py-12 md:py-24 lg:py-32">
+          <section id="projects" className="py-12 md:py-24 lg:py-32 relative z-10">
             <div className="px-8 max-w-7xl mx-auto space-y-6 md:space-y-12">
               <div className="flex flex-col items-center space-y-4 text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-mono text-gradient">
@@ -182,7 +147,7 @@ export default function Home() {
           {/* Blog Section */}
           <section
             id="blog"
-            className="py-12 md:py-24 lg:py-32 px-8 max-w-7xl mx-auto section-gradient rounded-3xl my-12"
+            className="py-12 md:py-24 lg:py-32 px-8 max-w-7xl mx-auto section-gradient rounded-3xl my-12 relative z-10"
           >
             <div className="space-y-6 md:space-y-12">
               <div className="flex flex-col items-center space-y-4 text-center">
@@ -289,7 +254,7 @@ export default function Home() {
           </section>
 
           {/* Resume Section */}
-          <section id="resume" className="py-12 md:py-24 lg:py-32 px-8 max-w-7xl mx-auto">
+          <section id="resume" className="py-12 md:py-24 lg:py-32 px-8 max-w-7xl mx-auto relative z-10">
             <div className="space-y-6 md:space-y-12">
               <div className="flex flex-col items-center space-y-4 text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-mono text-gradient">
@@ -366,7 +331,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="pt-6">
+                  {/* <div className="pt-6">
                     <h3 className="text-2xl font-bold mb-4 font-mono text-primary">Leadership</h3>
                     <ul className="space-y-2">
                       <li className="flex items-center gap-2">
@@ -378,7 +343,7 @@ export default function Home() {
                         <span className="font-mono">Grew member count by over 300% in 2 months</span>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -393,7 +358,7 @@ export default function Home() {
           </section>
 
           {/* Skills Section */}
-          <section id="skills" className="py-12 md:py-24 lg:py-32 section-gradient rounded-3xl my-12">
+          <section id="skills" className="py-12 md:py-24 lg:py-32 section-gradient rounded-3xl my-12 relative z-10">
             <div className="px-8 max-w-7xl mx-auto space-y-6 md:space-y-12">
               <div className="flex flex-col items-center space-y-4 text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-mono text-gradient">
@@ -447,7 +412,7 @@ export default function Home() {
           </section>
 
           {/* Footer */}
-          <footer className="border-t border-primary/20 py-8 md:py-12">
+          <footer className="border-t border-primary/20 py-8 md:py-12 relative z-10">
             <div className="px-8 max-w-7xl mx-auto flex flex-col items-center justify-center gap-4 text-center">
               <p className="text-sm text-muted-foreground font-mono">© 2025 Thomas Zeng. All rights reserved.</p>
             </div>
