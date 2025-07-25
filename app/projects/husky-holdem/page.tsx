@@ -3,6 +3,20 @@ import { ArrowLeft, Github, ExternalLink, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 
+export default function HuskyHoldemPage() {
+  return (
+    <div className="min-h-screen bg-background font-mono flex items-center justify-center">
+      <div className="text-center space-y-4">
+        <h1 className="text-3xl font-bold">Husky Hold'em</h1>
+        <p className="text-muted-foreground">Project details coming soon...</p>
+        <Button asChild>
+          <Link href="/#projects">← Back to Projects</Link>
+        </Button>
+      </div>
+    </div>
+  )
+}
+
 // export default function HuskyHoldemPage() {
 //   return (
 //     <div className="min-h-screen bg-background font-mono">

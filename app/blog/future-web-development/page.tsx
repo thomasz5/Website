@@ -272,3 +272,17 @@ import { Badge } from "@/components/ui/badge"
 //     </div>
 //   )
 // }
+
+export default function FutureWebDevelopmentPage() {
+  return (
+    <div className="min-h-screen bg-background font-mono flex items-center justify-center">
+      <div className="text-center space-y-4">
+        <h1 className="text-3xl font-bold">The Future of Web Development</h1>
+        <p className="text-muted-foreground">Coming Soon...</p>
+        <Button asChild>
+          <Link href="/#blog">← Back to Blog</Link>
+        </Button>
+      </div>
+    </div>
+  )
+}

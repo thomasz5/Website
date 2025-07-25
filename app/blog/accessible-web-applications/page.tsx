@@ -3,6 +3,20 @@ import { ArrowLeft, Calendar, Clock, User, Share2, BookOpen } from "lucide-react
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 
+export default function AccessibleWebApplicationsPage() {
+  return (
+    <div className="min-h-screen bg-background font-mono flex items-center justify-center">
+      <div className="text-center space-y-4">
+        <h1 className="text-3xl font-bold">Building Accessible Web Applications</h1>
+        <p className="text-muted-foreground">Coming Soon...</p>
+        <Button asChild>
+          <Link href="/#blog">← Back to Blog</Link>
+        </Button>
+      </div>
+    </div>
+  )
+}
+
 // export default function AccessibleWebApplicationsPage() {
   
 //   return (
