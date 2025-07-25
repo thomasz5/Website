@@ -45,8 +45,8 @@ export function InteractiveBackground({ className = "" }: InteractiveBackgroundP
         vx: (Math.random() - 0.5) * config.baseSpeed * 2,
         vy: (Math.random() - 0.5) * config.baseSpeed * 4,
         opacity: 1,
-        baseOpacity: Math.random() * 2 + 0.1,
-        size: Math.random() * 2.5 + 1,
+        baseOpacity: Math.random() * 1.5 + 0.2,
+        size: Math.random() * 2 + 1,
         color: config.colors[Math.floor(Math.random() * config.colors.length)],
       })
     }

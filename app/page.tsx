@@ -26,10 +26,10 @@ export default function Home() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-mono">
                   Hi, I'm <span className="text-gradient">Thomas</span>
                 </h1>
-                <div className="text-xl text-muted-foreground font-mono min-h-[3rem]">
+                <div className="text-xl text-muted-foreground font-mono min-h-[3rem] pr-[13px]">
                   <TypewriterText
-                    text="University of Washington student specializing in Applied & Computational Mathematical Sciences"
-                    speed={30}
+                    text="UW ACMS and Informatics Student"
+                    speed={20}
                   />
                 </div>
                 <div className="flex flex-col gap-3 pt-4 text-center items-center sm:flex-col">
