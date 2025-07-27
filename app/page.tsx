@@ -47,40 +47,40 @@ text="UW ACMS and Informatics Student "
           {/* About Section */}
           <section
             id="about"
-            className="py-12 md:py-24 lg:py-32 px-8 max-w-7xl mx-auto section-gradient rounded-3xl my-12 relative z-10"
+            className="py-8 md:py-16 lg:py-20 px-6 max-w-6xl mx-auto section-gradient rounded-2xl my-8 relative z-10"
           >
-            <div className="space-y-6 md:space-y-12">
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-mono text-gradient">
+            <div className="space-y-4 md:space-y-8">
+              <div className="flex flex-col items-center space-y-3 text-center">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-mono text-gradient">
                   About Me
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent"></div>
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent"></div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div>
-                  <img
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="About Me"
-                    className="rounded-lg object-cover w-full h-auto border border-primary/20"
-                  />
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold font-mono text-primary">Who I Am</h3>
-                  <p className="text-muted-foreground font-mono">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                                  <div className="max-w-xs mx-auto">
+                    <img
+                      src="/headshot.jpg"
+                      alt="About Me"
+                      className="rounded-lg object-cover w-full h-auto border border-primary/20"
+                    />
+                  </div>
+                                <div className="space-y-3">
+                  <h3 className="text-xl font-bold font-mono text-primary">Who I Am</h3>
+                  <p className="text-sm text-muted-foreground font-mono">
                     I'm a aspiring Software Engineer and at the University of Washington, 
                     pursuing a dual degree in Applied & Computational Mathematical Sciences and Informatics. I'm passionate 
                     about leveraging AI and quantitative skills to solve complex real-world problems.
                   </p>
-                  <p className="text-muted-foreground font-mono">
+                  <p className="text-sm text-muted-foreground font-mono">
                     My experience spans from building AI-powered gaming platforms and fitness chatbots to developing 
                     autonomous poker systems. I've led research initiatives in machine learning, developed full-stack 
                     applications, and contributed to open-source frameworks at the University of Washington.
                   </p>
-                  <p className="text-muted-foreground font-mono">
-                  Outside of academics and professional pursuits, I enjoy playing poker, swimming, and exploring new technologies!
+                  <p className="text-sm text-muted-foreground font-mono">
+                   Outside of academics and professional pursuits, I enjoy playing poker, swimming, and exploring new technologies!
                   </p>
-                  <div className="pt-4">
-                    <Button asChild className="font-mono purple-glow">
+                  <div className="pt-3">
+                    <Button size="sm" asChild className="font-mono purple-glow">
                       <Link href="mailto:thomasz@uw.edu">Get In Touch</Link>
                     </Button>
                   </div>
@@ -98,8 +98,7 @@ text="UW ACMS and Informatics Student "
                 </h2>
                 <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent"></div>
                 <p className="text-xl text-muted-foreground max-w-[800px] font-mono">
-                  Here are some of my recent projects. Each one presented unique challenges and opportunities for
-                  growth.
+                  Here are some of my recent projects.
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -146,19 +145,19 @@ text="UW ACMS and Informatics Student "
           {/* Blog Section */}
           <section
             id="blog"
-            className="py-12 md:py-24 lg:py-32 px-8 max-w-7xl mx-auto section-gradient rounded-3xl my-12 relative z-10"
+            className="py-8 md:py-16 lg:py-20 px-6 max-w-6xl mx-auto section-gradient rounded-2xl my-8 relative z-10"
           >
-            <div className="space-y-6 md:space-y-12">
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-mono text-gradient">
+            <div className="space-y-4 md:space-y-8">
+              <div className="flex flex-col items-center space-y-3 text-center">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-mono text-gradient">
                   Blog
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent"></div>
-                <p className="text-xl text-muted-foreground max-w-[800px] font-mono">
-                  Thoughts, tutorials, and insights about web development and technology.
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent"></div>
+                <p className="text-lg text-muted-foreground max-w-[600px] font-mono">
+                  Thoughts, tutorials, and insights.
                 </p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {/* Blog post cards */}
                 <Link
                   href="/blog/react-server-components"
@@ -166,21 +165,20 @@ text="UW ACMS and Informatics Student "
                 >
                   <div className="aspect-video w-full overflow-hidden">
                     <img
-                      src="/placeholder.svg?height=300&width=500"
+                      src="/placeholder.svg?height=200&width=400"
                       alt="Blog post"
                       className="h-full w-full object-cover hover:scale-105 transition-transform"
                     />
                   </div>
-                  <div className="p-6">
-                    <p className="text-sm text-muted-foreground font-mono">June 12, 2025</p>
-                    <h3 className="text-xl font-bold mt-2 font-mono text-primary hover:text-primary/80 transition-colors">
+                  <div className="p-4">
+                    <p className="text-xs text-muted-foreground font-mono">June 12, 2025</p>
+                    <h3 className="text-lg font-bold mt-1 font-mono text-primary hover:text-primary/80 transition-colors">
                       Understanding React Server Components
                     </h3>
-                    <p className="text-muted-foreground mt-2 font-mono">
-                      An in-depth look at React Server Components and how they're changing the way we build web
-                      applications.
+                    <p className="text-sm text-muted-foreground mt-1 font-mono">
+                      An in-depth look at React Server Components and how they're changing web development.
                     </p>
-                    <span className="text-primary font-medium mt-4 inline-block hover:underline font-mono">
+                    <span className="text-primary font-medium text-sm mt-3 inline-block hover:underline font-mono">
                       Read More
                     </span>
                   </div>
@@ -192,21 +190,20 @@ text="UW ACMS and Informatics Student "
                 >
                   <div className="aspect-video w-full overflow-hidden">
                     <img
-                      src="/placeholder.svg?height=300&width=500"
+                      src="/placeholder.svg?height=200&width=400"
                       alt="Blog post"
                       className="h-full w-full object-cover hover:scale-105 transition-transform"
                     />
                   </div>
-                  <div className="p-6">
-                    <p className="text-sm text-muted-foreground font-mono">May 28, 2025</p>
-                    <h3 className="text-xl font-bold mt-2 font-mono text-primary hover:text-primary/80 transition-colors">
+                  <div className="p-4">
+                    <p className="text-xs text-muted-foreground font-mono">May 28, 2025</p>
+                    <h3 className="text-lg font-bold mt-1 font-mono text-primary hover:text-primary/80 transition-colors">
                       Building Accessible Web Applications
                     </h3>
-                    <p className="text-muted-foreground mt-2 font-mono">
-                      Best practices for creating web applications that are accessible to everyone, regardless of
-                      ability.
+                    <p className="text-sm text-muted-foreground mt-1 font-mono">
+                      Best practices for creating accessible web applications for everyone.
                     </p>
-                    <span className="text-primary font-medium mt-4 inline-block hover:underline font-mono">
+                    <span className="text-primary font-medium text-sm mt-3 inline-block hover:underline font-mono">
                       Read More
                     </span>
                   </div>
@@ -218,29 +215,29 @@ text="UW ACMS and Informatics Student "
                 >
                   <div className="aspect-video w-full overflow-hidden">
                     <img
-                      src="/placeholder.svg?height=300&width=500"
+                      src="/placeholder.svg?height=200&width=400"
                       alt="Blog post"
                       className="h-full w-full object-cover hover:scale-105 transition-transform"
                     />
                   </div>
-                  <div className="p-6">
-                    <p className="text-sm text-muted-foreground font-mono">April 15, 2025</p>
-                    <h3 className="text-xl font-bold mt-2 font-mono text-primary hover:text-primary/80 transition-colors">
+                  <div className="p-4">
+                    <p className="text-xs text-muted-foreground font-mono">April 15, 2025</p>
+                    <h3 className="text-lg font-bold mt-1 font-mono text-primary hover:text-primary/80 transition-colors">
                       The Future of Web Development
                     </h3>
-                    <p className="text-muted-foreground mt-2 font-mono">
-                      Exploring emerging technologies and trends that will shape the future of web development.
+                    <p className="text-sm text-muted-foreground mt-1 font-mono">
+                      Exploring emerging technologies that will shape future web development.
                     </p>
-                    <span className="text-primary font-medium mt-4 inline-block hover:underline font-mono">
+                    <span className="text-primary font-medium text-sm mt-3 inline-block hover:underline font-mono">
                       Read More
                     </span>
                   </div>
                 </Link>
               </div>
-              <div className="flex justify-center pt-8">
+              <div className="flex justify-center pt-6">
                 <Button
                   variant="outline"
-                  size="lg"
+                  size="sm"
                   asChild
                   className="font-mono bg-transparent border-primary/30 hover:border-primary"
                 >
@@ -378,20 +375,20 @@ text="UW ACMS and Informatics Student "
           </section>
 
           {/* Skills Section */}
-          <section id="skills" className="py-12 md:py-24 lg:py-32 section-gradient rounded-3xl my-12 relative z-10">
-            <div className="px-8 max-w-7xl mx-auto space-y-6 md:space-y-12">
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-mono text-gradient">
+          <section id="skills" className="py-8 md:py-16 lg:py-20 section-gradient rounded-2xl my-8 relative z-10">
+            <div className="px-6 max-w-6xl mx-auto space-y-4 md:space-y-8">
+              <div className="flex flex-col items-center space-y-3 text-center">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-mono text-gradient">
                   My Skills
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent"></div>
-                <p className="text-xl text-muted-foreground max-w-[800px] font-mono">
-                  I've worked with a variety of technologies and methodologies throughout my career.
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent"></div>
+                <p className="text-lg text-muted-foreground max-w-[600px] font-mono">
+                  Technologies and methodologies I've worked with.
                 </p>
               </div>
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h3 className="text-xl font-bold font-mono text-primary">Coding Languages</h3>
+              <div className="space-y-6">
+                <div className="space-y-3">
+                  <h3 className="text-lg font-bold font-mono text-primary">Coding Languages</h3>
                   <div className="flex flex-wrap gap-2">
                     <SkillBadge name="Java" />
                     <SkillBadge name="Python" />
@@ -401,8 +398,8 @@ text="UW ACMS and Informatics Student "
                     <SkillBadge name="MATLAB" />
                   </div>
                 </div>
-                <div className="space-y-4">
-                  <h3 className="text-xl font-bold font-mono text-primary">Frameworks & Libraries</h3>
+                <div className="space-y-3">
+                  <h3 className="text-lg font-bold font-mono text-primary">Frameworks & Libraries</h3>
                   <div className="flex flex-wrap gap-2">
                     <SkillBadge name="Flask" />
                     <SkillBadge name="React.js" />
@@ -421,8 +418,8 @@ text="UW ACMS and Informatics Student "
                     <SkillBadge name="PostgreSQL" />
                   </div>
                 </div>
-                <div className="space-y-4">
-                  <h3 className="text-xl font-bold font-mono text-primary">Relevant Courses</h3>
+                <div className="space-y-3">
+                  <h3 className="text-lg font-bold font-mono text-primary">Relevant Courses</h3>
                   <div className="flex flex-wrap gap-2">
                     <SkillBadge name="Data Structures & Algorithms" />
                     <SkillBadge name="Discrete Mathematics" />
