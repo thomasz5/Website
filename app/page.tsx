@@ -103,10 +103,18 @@ text="UW ACMS and Informatics Student "
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <ProjectCard
+                  title="Automated Recruitment Intelligence System"
+                  description="AI-powered internship recruitment system."
+                  tags={["Python", "Machine Learning", "NLP", "PostgreSQL", "Docker"]}
+                  imageUrl="/Recruitment.png?height=300&width=500"
+                  projectUrl="https://github.com/thomasz5"
+                  slug="recruitment-intelligence"
+                />
+                <ProjectCard
                   title="Dr. Mike AI Fitness Chatbot"
                   description="AI chatbot mimicking fitness expert communication style."
                   tags={["Python", "PyTorch", "Redis", "Docker", "HuggingFace", "React", "Supabase", "PostgreSQL"]}
-                  imageUrl="/placeholder.svg?height=300&width=500"
+                  imageUrl="/Mike.png?height=300&width=500"
                   projectUrl="https://github.com/thomasz5"
                   slug="dr-mike-ai"
                 />
@@ -114,17 +122,9 @@ text="UW ACMS and Informatics Student "
                   title="Autonomous Poker Bot"
                   description="AI poker system achieving 2.1 BB/100 win rate."
                   tags={["Python", "SQL", "JavaScript", "PyTorch", "PostgreSQL", "Redis", "Docker"]}
-                  imageUrl="/placeholder.svg?height=300&width=500"
+                  imageUrl="/bender-futurama-poker.jpg?height=300&width=500"
                   projectUrl="https://github.com/thomasz5"
                   slug="poker-bot"
-                />
-                <ProjectCard
-                  title="Catan Settlement Optimization Simulator"
-                  description="Full-stack Catan board simulation with computer vision pipeline."
-                  tags={["Python", "OpenCV", "Flask", "PostgreSQL"]}
-                  imageUrl="/placeholder.svg?height=300&width=500"
-                  projectUrl="https://github.com/thomasz5"
-                  slug="catan-simulator"
                 />
               </div>
               <div className="flex justify-center pt-8">
@@ -142,7 +142,8 @@ text="UW ACMS and Informatics Student "
             </div>
           </section>
 
-          {/* Blog Section */}
+          {/* Blog Section - Commented Out */}
+          {/*
           <section
             id="blog"
             className="py-8 md:py-16 lg:py-20 px-6 max-w-6xl mx-auto section-gradient rounded-2xl my-8 relative z-10"
@@ -158,7 +159,6 @@ text="UW ACMS and Informatics Student "
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {/* Blog post cards */}
                 <Link
                   href="/blog/react-server-components"
                   className="card-gradient rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:shadow-primary/20 transition-all"
@@ -248,6 +248,7 @@ text="UW ACMS and Informatics Student "
               </div>
             </div>
           </section>
+          */}
 
           {/* Resume Section */}
           <section id="resume" className="py-8 md:py-16 lg:py-20 px-8 max-w-7xl mx-auto relative z-10">
