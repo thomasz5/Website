@@ -1,5 +1,8 @@
 # UW Student Portfolio Template
 
+thomasz05.me
+
+
 A free, modern portfolio website template designed for University of Washington students to showcase their academic achievements, projects, and professional experience.
 
 ## Features
