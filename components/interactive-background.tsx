@@ -30,7 +30,7 @@ export function InteractiveBackground({ className = "" }: InteractiveBackgroundP
     maxDistance: 100000, // Distance at which particles start to appear
     repelDistance: 200, // Distance at which particles start to scatter
     repelForce: 50,
-    baseSpeed: 200,
+    baseSpeed: 20,
     colors: ["rgba(73, 216, 230, ", "rgba(225, 225, 225, ", "rgba(196, 181, 253, "], // white, light blue, light purple
   }
 

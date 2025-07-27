@@ -28,7 +28,7 @@ export default function Home() {
                 </h1>
                 <div className="text-xl text-muted-foreground font-mono min-h-[3rem] pr-[13px]">
                   <TypewriterText
-                    text="UW ACMS and Informatics Student"
+text="UW ACMS and Informatics Student "
                     speed={20}
                   />
                 </div>
@@ -67,22 +67,21 @@ export default function Home() {
                 <div className="space-y-4">
                   <h3 className="text-2xl font-bold font-mono text-primary">Who I Am</h3>
                   <p className="text-muted-foreground font-mono">
-                    I'm an aspiring software engineer and current student at the University of Washington, studying
-                    Applied & Computational Mathematical Sciences. I'm passionate about leveraging quantitative skills
-                    to solve real-world problems.
+                    I'm a aspiring Software Engineer and at the University of Washington, 
+                    pursuing a dual degree in Applied & Computational Mathematical Sciences and Informatics. I'm passionate 
+                    about leveraging AI and quantitative skills to solve complex real-world problems.
                   </p>
                   <p className="text-muted-foreground font-mono">
-                    My interest in software development sparked during my time at Tri Counties Bank, where I automated
-                    tedious tasks using Python. Since then, I've been exploring various areas of computer science,
-                    including machine learning, algorithmic trading, and full-stack development.
+                    My experience spans from building AI-powered gaming platforms and fitness chatbots to developing 
+                    autonomous poker systems. I've led research initiatives in machine learning, developed full-stack 
+                    applications, and contributed to open-source frameworks at the University of Washington.
                   </p>
                   <p className="text-muted-foreground font-mono">
-                    Outside of academics and professional pursuits, I enjoy playing poker, watching basketball, and
-                    exploring new technologies.
+                  Outside of academics and professional pursuits, I enjoy playing poker, swimming, and exploring new technologies!
                   </p>
                   <div className="pt-4">
                     <Button asChild className="font-mono purple-glow">
-                      <Link href="#contact">Get In Touch</Link>
+                      <Link href="mailto:thomasz@uw.edu">Get In Touch</Link>
                     </Button>
                   </div>
                 </div>
@@ -105,28 +104,28 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <ProjectCard
+                  title="Dr. Mike AI Fitness Chatbot"
+                  description="AI chatbot mimicking fitness expert communication style."
+                  tags={["Python", "PyTorch", "Redis", "Docker", "HuggingFace", "React", "Supabase", "PostgreSQL"]}
+                  imageUrl="/placeholder.svg?height=300&width=500"
+                  projectUrl="https://github.com/thomasz5"
+                  slug="dr-mike-ai"
+                />
+                <ProjectCard
+                  title="Autonomous Poker Bot"
+                  description="AI poker system achieving 2.1 BB/100 win rate."
+                  tags={["Python", "SQL", "JavaScript", "PyTorch", "PostgreSQL", "Redis", "Docker"]}
+                  imageUrl="/placeholder.svg?height=300&width=500"
+                  projectUrl="https://github.com/thomasz5"
+                  slug="poker-bot"
+                />
+                <ProjectCard
                   title="Catan Settlement Optimization Simulator"
-                  description="A full-stack Python based Catan board simulation with dynamic visualization and computer vision pipeline using OpenCV and OCR."
+                  description="Full-stack Catan board simulation with computer vision pipeline."
                   tags={["Python", "OpenCV", "Flask", "PostgreSQL"]}
                   imageUrl="/placeholder.svg?height=300&width=500"
                   projectUrl="https://github.com/thomasz5"
                   slug="catan-simulator"
-                />
-                <ProjectCard
-                  title="Husky Hold'em"
-                  description="Organized and developed Husky Hold'em Coding Competition and Website, securing $6500 worth of sponsorship support."
-                  tags={["JavaScript", "HTML/CSS", "Event Management"]}
-                  imageUrl="/placeholder.svg?height=300&width=500"
-                  projectUrl="https://github.com/thomasz5"
-                  slug="husky-holdem"
-                />
-                <ProjectCard
-                  title="Option Strategies Research Paper"
-                  description="Research paper in financial mathematics, deriving mathematical axioms and configuring Black-Scholes Model for iron condor strategies."
-                  tags={["Mathematical Modeling", "Financial Analysis", "ThinkorSwim"]}
-                  imageUrl="/placeholder.svg?height=300&width=500"
-                  projectUrl="https://github.com/thomasz5"
-                  slug="option-strategies"
                 />
               </div>
               <div className="flex justify-center pt-8">
@@ -254,80 +253,101 @@ export default function Home() {
           </section>
 
           {/* Resume Section */}
-          <section id="resume" className="py-12 md:py-24 lg:py-32 px-8 max-w-7xl mx-auto relative z-10">
-            <div className="space-y-6 md:space-y-12">
+          <section id="resume" className="py-8 md:py-16 lg:py-20 px-8 max-w-7xl mx-auto relative z-10">
+            <div className="space-y-4 md:space-y-8">
               <div className="flex flex-col items-center space-y-4 text-center">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-mono text-gradient">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-mono text-gradient">
                   Resume
                 </h2>
                 <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent"></div>
-                <p className="text-xl text-muted-foreground max-w-[800px] font-mono">
+                <p className="text-lg text-muted-foreground max-w-[800px] font-mono">
                   My professional experience and education.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Experience */}
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold font-mono text-primary">Experience</h3>
+                                  <div className="space-y-4">
+                    <h3 className="text-xl font-bold font-mono text-primary">Experience</h3>
 
-                  <div className="space-y-6">
-                    <div className="border-l-4 border-primary pl-4 space-y-2 card-gradient p-4 rounded-lg">
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-primary pl-3 space-y-1 card-gradient p-3 rounded-lg">
                       <div className="flex justify-between items-center">
-                        <h4 className="text-xl font-semibold font-mono text-foreground">Project Management Intern</h4>
-                        <span className="text-sm text-muted-foreground font-mono">June 2024 – Sept. 2024</span>
+                        <h4 className="text-lg font-semibold font-mono text-foreground">Co-Founder & CTO</h4>
+                        <span className="text-xs text-muted-foreground font-mono">May 2025 – Present</span>
                       </div>
-                      <p className="font-medium font-mono text-primary">Tri Counties Bank</p>
-                      <p className="text-muted-foreground font-mono">
-                        Configured NetBox in Azure sandbox environment to inventory 80 network and server hardware;
-                        secured REST API integration using Java for real-time data tracking.
+                      <p className="text-sm font-medium font-mono text-primary">CatanAI, Inc.</p>
+                      <p className="text-sm text-muted-foreground font-mono">
+                        Founded AI-powered Catan strategy platform.
                       </p>
                     </div>
 
-                    <div className="border-l-4 border-primary pl-4 space-y-2 card-gradient p-4 rounded-lg">
+                    <div className="border-l-4 border-primary pl-3 space-y-1 card-gradient p-3 rounded-lg">
                       <div className="flex justify-between items-center">
-                        <h4 className="text-xl font-semibold font-mono text-foreground">
-                          Machine Learning Student Researcher
+                        <h4 className="text-lg font-semibold font-mono text-foreground">
+                          Research Developer
                         </h4>
-                        <span className="text-sm text-muted-foreground font-mono">Dec. 2023 – May 2024</span>
+                        <span className="text-xs text-muted-foreground font-mono">Dec. 2024 – Apr. 2025</span>
                       </div>
-                      <p className="font-medium font-mono text-primary">Data Analysis & Intelligent Systems</p>
-                      <p className="text-muted-foreground font-mono">
-                        Implemented RASA NLU model and dialogue management system to handle complex user queries, using
-                        Python to generate personalized responses.
+                      <p className="text-sm font-medium font-mono text-primary">Pneel – University of Washington</p>
+                      <p className="text-sm text-muted-foreground font-mono">
+                        Built Array Framework core and automated docs generation.
                       </p>
                     </div>
 
-                    <div className="border-l-4 border-primary pl-4 space-y-2 card-gradient p-4 rounded-lg">
+                    <div className="border-l-4 border-primary pl-3 space-y-1 card-gradient p-3 rounded-lg">
                       <div className="flex justify-between items-center">
-                        <h4 className="text-xl font-semibold font-mono text-foreground">Co-Author</h4>
-                        <span className="text-sm text-muted-foreground font-mono">Sept. 2023 – March 2024</span>
+                        <h4 className="text-lg font-semibold font-mono text-foreground">Project Management Intern</h4>
+                        <span className="text-xs text-muted-foreground font-mono">June 2024 – Sept. 2024</span>
                       </div>
-                      <p className="font-medium font-mono text-primary">Option Strategies Research Paper</p>
-                      <p className="text-muted-foreground font-mono">
-                        Working research paper in financial mathematics, rigorously deriving 7 mathematical axioms and
-                        configuring Black-Scholes Model.
+                      <p className="text-sm font-medium font-mono text-primary">Tri Counties Bank</p>
+                      <p className="text-sm text-muted-foreground font-mono">
+                        Configured NetBox project in Azure and built Flask microservices.
                       </p>
                     </div>
+
+                    <div className="border-l-4 border-primary pl-3 space-y-1 card-gradient p-3 rounded-lg">
+                      <div className="flex justify-between items-center">
+                        <h4 className="text-lg font-semibold font-mono text-foreground">
+                          ML Researcher
+                        </h4>
+                        <span className="text-xs text-muted-foreground font-mono">Dec. 2023 – May 2024</span>
+                      </div>
+                      <p className="text-sm font-medium font-mono text-primary">iCare – University of Washington</p>
+                      <p className="text-sm text-muted-foreground font-mono">
+                        Implemented RASA NLU model and dialogue management system.
+                      </p>
+                    </div>
+
+                    {/* <div className="border-l-4 border-primary pl-4 space-y-2 card-gradient p-4 rounded-lg">
+                      <div className="flex justify-between items-center">
+                        <h4 className="text-xl font-semibold font-mono text-foreground">Co-President</h4>
+                        <span className="text-sm text-muted-foreground font-mono">Sept. 2023 – Dec. 2024</span>
+                      </div>
+                      <p className="font-medium font-mono text-primary">Algorithmic Trading Club</p>
+                      <p className="text-muted-foreground font-mono">
+                        Co-President and organized Husky Hold'em Coding Competition.
+                      </p>
+                    </div> */}
                   </div>
                 </div>
 
                 {/* Education */}
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold font-mono text-primary">Education</h3>
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold font-mono text-primary">Education</h3>
 
-                  <div className="space-y-6">
-                    <div className="border-l-4 border-primary pl-4 space-y-2 card-gradient p-4 rounded-lg">
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-primary pl-3 space-y-1 card-gradient p-3 rounded-lg">
                       <div className="flex justify-between items-center">
-                        <h4 className="text-xl font-semibold font-mono text-foreground">
-                          University of Washington - Seattle
+                        <h4 className="text-lg font-semibold font-mono text-foreground">
+                          University of Washington
                         </h4>
-                        <span className="text-sm text-muted-foreground font-mono">Graduating: June 2026</span>
+                        <span className="text-xs text-muted-foreground font-mono">June 2027</span>
                       </div>
-                      <p className="font-medium font-mono text-primary">
-                        B.S. Applied & Computational Mathematical Sciences
+                      <p className="text-sm font-medium font-mono text-primary">
+                        B.S. ACMS and Informatics
                       </p>
-                      <p className="text-muted-foreground font-mono">Discrete Mathematics and Algorithms</p>
+                      <p className="text-sm text-muted-foreground font-mono">Seattle, WA</p>
                     </div>
                   </div>
 
@@ -347,10 +367,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex justify-center pt-8">
-                <Button size="lg" asChild className="font-mono purple-glow">
-                  <Link href="/resume.pdf" target="_blank">
-                    Download Full Resume <Download className="ml-2 h-4 w-4" />
+              <div className="flex justify-center pt-6">
+                <Button asChild className="font-mono purple-glow">
+                  <Link href="/Resume-Thomas-Zeng.pdf" target="_blank">
+                    Download Resume <Download className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
@@ -375,23 +395,30 @@ export default function Home() {
                   <div className="flex flex-wrap gap-2">
                     <SkillBadge name="Java" />
                     <SkillBadge name="Python" />
-                    <SkillBadge name="HTML/CSS" />
                     <SkillBadge name="JavaScript" />
+                    <SkillBadge name="TypeScript" />
                     <SkillBadge name="SQL" />
                     <SkillBadge name="MATLAB" />
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold font-mono text-primary">Web Technology</h3>
+                  <h3 className="text-xl font-bold font-mono text-primary">Frameworks & Libraries</h3>
                   <div className="flex flex-wrap gap-2">
-                    <SkillBadge name="JavaScript" />
-                    <SkillBadge name="TypeScript" />
-                    <SkillBadge name="Django" />
-                    <SkillBadge name="ReactJS" />
-                    <SkillBadge name="Docker" />
+                    <SkillBadge name="Flask" />
+                    <SkillBadge name="React.js" />
+                    <SkillBadge name="TailwindCSS" />
+                    <SkillBadge name="WebSocket libraries" />
+                    <SkillBadge name="D3.js" />
                     <SkillBadge name="OpenCV" />
-                    <SkillBadge name="OCR" />
-                    <SkillBadge name="Git" />
+                    <SkillBadge name="TesseractOCR" />
+                    <SkillBadge name="PyTorch" />
+                    <SkillBadge name="HuggingFace" />
+                    <SkillBadge name="RasaNLU" />
+                    <SkillBadge name="Docker" />
+                    <SkillBadge name="AzureSDK" />
+                    <SkillBadge name="Redis" />
+                    <SkillBadge name="Supabase" />
+                    <SkillBadge name="PostgreSQL" />
                   </div>
                 </div>
                 <div className="space-y-4">
