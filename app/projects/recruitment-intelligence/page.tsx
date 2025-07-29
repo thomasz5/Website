@@ -88,18 +88,17 @@ export default function RecruitmentIntelligencePage() {
               <h2 className="text-2xl font-bold font-mono text-primary mb-6">Project Overview</h2>
               <div className="space-y-6 text-muted-foreground font-mono">
                 <p>
-                  The Automated Recruitment Intelligence System is an end-to-end AI solution that revolutionizes the 
-                  internship recruitment process by leveraging machine learning algorithms and natural language processing 
-                  to automatically screen, evaluate, and rank candidates.
+                  The Automated Recruitment Intelligence System is an end-to-end AI solution that upgrades the 
+                  internship recruitment process by  natural language processing 
+                  to automatically screen, evaluate, and rank candidates. The system is designed to be scalable and 
+                  efficient, allowing for the processing of large amounts of data in a short amount of time.
                 </p>
 
                 <h3 className="text-xl font-semibold text-foreground">Key Features</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li>Automated resume parsing and skill extraction using NLP</li>
-                  <li>Machine learning candidate scoring and ranking system</li>
-                  <li>Intelligent job-candidate matching algorithms</li>
                   <li>Real-time dashboard for recruitment analytics</li>
-                  <li>Bias detection and fairness monitoring</li>
+                  <li>Scalable and efficient system design</li>
                 </ul>
 
                 <h3 className="text-xl font-semibold text-foreground">Technical Implementation</h3>
@@ -119,9 +118,7 @@ export default function RecruitmentIntelligencePage() {
 
                 <h3 className="text-xl font-semibold text-foreground">Impact</h3>
                 <p>
-                  The system reduces manual screening time by 85% while improving candidate quality scores by 40%. 
-                  It has processed over 1,000 applications and successfully identified top-tier candidates that 
-                  traditional methods might have overlooked.
+                  ---
                 </p>
               </div>
             </section>
@@ -139,7 +136,7 @@ export default function RecruitmentIntelligencePage() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Lines of Code</span>
-                  <span className="font-mono">~2,200</span>
+                  <span className="font-mono">~1,200</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Team Size</span>
