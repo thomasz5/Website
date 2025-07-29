@@ -67,17 +67,17 @@ text="UW ACMS and Informatics Student "
                                 <div className="space-y-3">
                   <h3 className="text-xl font-bold font-mono text-primary">Who I Am</h3>
                   <p className="text-sm text-muted-foreground font-mono">
-                    I'm a aspiring Software Engineer and at the University of Washington, 
+                    I'm an aspiring Software Engineer and at the University of Washington, 
                     pursuing a dual degree in Applied & Computational Mathematical Sciences and Informatics. I'm passionate 
                     about leveraging AI and quantitative skills to solve complex real-world problems.
                   </p>
                   <p className="text-sm text-muted-foreground font-mono">
                     My experience spans from building AI-powered gaming platforms and fitness chatbots to developing 
                     autonomous poker systems. I've led research initiatives in machine learning, developed full-stack 
-                    applications, and contributed to open-source frameworks at the University of Washington.
+                    applications, and contributed to frameworks at the University of Washington.
                   </p>
                   <p className="text-sm text-muted-foreground font-mono">
-                   Outside of academics and professional pursuits, I enjoy playing poker, swimming, and exploring new technologies!
+                   Outside of academics and professional pursuits, I enjoy playing poker, swimming, and exploring new technologies! 
                   </p>
                   <div className="pt-3">
                     <Button size="sm" asChild className="font-mono purple-glow">
@@ -103,9 +103,9 @@ text="UW ACMS and Informatics Student "
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <ProjectCard
-                  title="Automated Recruitment Intelligence System"
-                  description="AI-powered internship recruitment system."
-                  tags={["Python", "Machine Learning", "NLP", "PostgreSQL", "Docker"]}
+                  title="Recruitment Intelligence System"
+                  description="Automatic Internship recruitment filtering system."
+                  tags={["Python", "NLP", "PostgreSQL", "Docker"]}
                   imageUrl="/Recruitment.png?height=300&width=500"
                   projectUrl="https://github.com/thomasz5"
                   slug="recruitment-intelligence"
@@ -287,7 +287,7 @@ text="UW ACMS and Informatics Student "
                         </h4>
                         <span className="text-xs text-muted-foreground font-mono">Dec. 2024 – Apr. 2025</span>
                       </div>
-                      <p className="text-sm font-medium font-mono text-primary">Pneel – University of Washington</p>
+                      <p className="text-sm font-medium font-mono text-primary">Pncel – University of Washington</p>
                       <p className="text-sm text-muted-foreground font-mono">
                         Built Array Framework core and automated docs generation.
                       </p>
