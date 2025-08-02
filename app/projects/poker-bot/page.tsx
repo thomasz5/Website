@@ -58,26 +58,12 @@ export default function PokerBotPage() {
           <div className="lg:col-span-2 space-y-8">
             {/* Project Demo */}
             <section className="section-gradient rounded-3xl p-8">
-              <h2 className="text-2xl font-bold font-mono text-primary mb-6">Poker Bot Simulator</h2>
-              <div className="aspect-video bg-card rounded-lg border border-primary/20 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto">
-                    <Play className="h-8 w-8 text-primary" />
-                  </div>
-                  <p className="text-muted-foreground font-mono">AI Poker Strategy Simulator</p>
-                  <Button className="purple-glow">Launch Simulation</Button>
-                </div>
-              </div>
-            </section>
-
-            {/* Project Video */}
-            <section className="section-gradient rounded-3xl p-8">
-              <h2 className="text-2xl font-bold font-mono text-primary mb-6">Strategy Analysis Demo</h2>
+              <h2 className="text-2xl font-bold font-mono text-primary mb-6">Poker Bot Demo</h2>
               <div className="aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
                 <video
                   controls
                   className="w-full h-full object-cover"
-                  poster="/placeholder.svg?height=400&width=700&text=Poker+Bot+Demo"
+                  poster="/bender-futurama-poker.jpg"
                 >
                   <source src="/placeholder-video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.

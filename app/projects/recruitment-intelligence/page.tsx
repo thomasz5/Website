@@ -56,28 +56,14 @@ export default function RecruitmentIntelligencePage() {
           <div className="lg:col-span-2 space-y-8">
             {/* Project Demo */}
             <section className="section-gradient rounded-3xl p-8">
-              <h2 className="text-2xl font-bold font-mono text-primary mb-6">System Dashboard</h2>
-              <div className="aspect-video bg-card rounded-lg border border-primary/20 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto">
-                    <Play className="h-8 w-8 text-primary" />
-                  </div>
-                  <p className="text-muted-foreground font-mono">AI Recruitment Dashboard</p>
-                  <Button className="purple-glow">Launch Demo</Button>
-                </div>
-              </div>
-            </section>
-
-            {/* Project Video */}
-            <section className="section-gradient rounded-3xl p-8">
-              <h2 className="text-2xl font-bold font-mono text-primary mb-6">System Overview</h2>
+              <h2 className="text-2xl font-bold font-mono text-primary mb-6">System Demo</h2>
               <div className="aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
                 <video
                   controls
                   className="w-full h-full object-cover"
-                  poster="/placeholder.svg?height=400&width=700&text=Recruitment+AI+Demo"
+                  poster="/Recruitment.png"
                 >
-                  <source src="/placeholder-video.mp4" type="video/mp4" />
+                  <source src="/Recruitment.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
