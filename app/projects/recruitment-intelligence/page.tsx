@@ -36,7 +36,7 @@ export default function RecruitmentIntelligencePage() {
             </div>
             <div className="flex gap-4 pt-4">
               <Button asChild className="purple-glow">
-                <Link href="https://github.com/thomasz5" target="_blank">
+                <Link href="https://github.com/thomasz5/Internship-Filter" target="_blank">
                   <Github className="mr-2 h-4 w-4" />
                   View Code
                 </Link>
@@ -74,10 +74,9 @@ export default function RecruitmentIntelligencePage() {
               <h2 className="text-2xl font-bold font-mono text-primary mb-6">Project Overview</h2>
               <div className="space-y-6 text-muted-foreground font-mono">
                 <p>
-                  The Automated Recruitment Intelligence System is an end-to-end AI solution that upgrades the 
-                  internship recruitment process by  natural language processing 
-                  to automatically screen, evaluate, and rank candidates. The system is designed to be scalable and 
-                  efficient, allowing for the processing of large amounts of data in a short amount of time.
+                  Built a Python-based web scraping system that processes 100+ internship opportunities weekly. 
+                  I deployed this on AWS EC2 with 3-hour monitoring cycles, cutting manual job search time by 50%. 
+                  The system uses NLP to automatically screen and rank candidates.
                 </p>
 
                 <h3 className="text-xl font-semibold text-foreground">Key Features</h3>
@@ -87,24 +86,24 @@ export default function RecruitmentIntelligencePage() {
                   <li>Scalable and efficient system design</li>
                 </ul>
 
-                <h3 className="text-xl font-semibold text-foreground">Technical Implementation</h3>
+                <h3 className="text-xl font-semibold text-foreground">How I Built It</h3>
                 <p>
-                  The system employs advanced NLP techniques to extract meaningful information from resumes and job 
-                  descriptions, then uses machine learning models to predict candidate success probability. The 
-                  containerized architecture ensures scalability and easy deployment across different environments.
+                  I used NLP to extract key info from resumes and job posts. Then I trained ML models to predict 
+                  which candidates would succeed. Everything runs in Docker containers, making it easy to deploy anywhere.
                 </p>
 
-                <h3 className="text-xl font-semibold text-foreground">Challenges Overcome</h3>
+                <h3 className="text-xl font-semibold text-foreground">What I Learned</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Handling diverse resume formats and extracting structured data</li>
-                  <li>Building fair and unbiased ML models for candidate evaluation</li>
-                  <li>Optimizing matching algorithms for large candidate pools</li>
-                  <li>Ensuring data privacy and security compliance</li>
+                  <li>How to parse messy resume formats and extract clean data</li>
+                  <li>Building fair AI models that don't discriminate</li>
+                  <li>Making algorithms fast enough for thousands of candidates</li>
+                  <li>Keeping user data private and secure</li>
                 </ul>
 
-                <h3 className="text-xl font-semibold text-foreground">Impact</h3>
+                <h3 className="text-xl font-semibold text-foreground">Results</h3>
                 <p>
-                  ---
+                  The system processes 100+ job opportunities every week and saves recruiters 50% of their 
+                  manual search time. It's running 24/7 on AWS, automatically finding the best matches.
                 </p>
               </div>
             </section>

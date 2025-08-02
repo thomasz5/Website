@@ -77,9 +77,9 @@ export default function DrMikeAIPage() {
               <h2 className="text-2xl font-bold font-mono text-primary mb-6">Project Overview</h2>
               <div className="space-y-6 text-muted-foreground font-mono">
                 <p>
-                  Dr. Mike AI is an advanced conversational AI system designed to replicate the personality, 
-                  communication style, and expertise of a fitness expert. The system uses transformer models 
-                  and personality modeling to create engaging, helpful fitness conversations.
+                  I built an AI chatbot that talks like a real fitness expert. It has personality, remembers 
+                  your conversations, and gives personalized workout advice. People love chatting with it 
+                  because it feels human, not robotic.
                 </p>
 
                 <h3 className="text-xl font-semibold text-foreground">Key Features</h3>
@@ -91,26 +91,25 @@ export default function DrMikeAIPage() {
                   <li>Scalable microservices architecture with Docker containers</li>
                 </ul>
 
-                <h3 className="text-xl font-semibold text-foreground">Technical Implementation</h3>
+                <h3 className="text-xl font-semibold text-foreground">How I Built It</h3>
                 <p>
-                  The system combines HuggingFace transformer models with custom personality layers, 
-                  implemented using PyTorch. The chat interface is built with React and connects to 
-                  a Python backend through RESTful APIs, with conversation history stored in Supabase.
+                  I used HuggingFace transformers with custom personality layers in PyTorch. 
+                  The React frontend talks to a Python backend via APIs. All conversations 
+                  are saved in Supabase so the AI remembers you.
                 </p>
 
-                <h3 className="text-xl font-semibold text-foreground">Challenges Overcome</h3>
+                <h3 className="text-xl font-semibold text-foreground">What I Learned</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Maintaining consistent personality across extended conversations</li>
-                  <li>Optimizing model inference for real-time chat responses</li>
-                  <li>Implementing contextual memory without overwhelming the model</li>
-                  <li>Ensuring fitness advice accuracy and safety guidelines</li>
+                  <li>How to keep AI personality consistent across long chats</li>
+                  <li>Making AI responses fast enough for real-time conversation</li>
+                  <li>Giving AI memory without confusing it</li>
+                  <li>Ensuring fitness advice is safe and accurate</li>
                 </ul>
 
-                <h3 className="text-xl font-semibold text-foreground">Impact</h3>
+                <h3 className="text-xl font-semibold text-foreground">Results</h3>
                 <p>
-                  The chatbot achieved a 30% improvement in user engagement compared to generic fitness bots, 
-                  with users spending an average of 12 minutes per session and returning for follow-up 
-                  conversations at a 65% rate.
+                  Users engage 30% more than with generic fitness bots. They spend 12 minutes per session 
+                  on average, and 65% come back for more conversations. People actually enjoy talking to it!
                 </p>
               </div>
             </section>

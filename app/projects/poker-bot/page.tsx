@@ -76,9 +76,9 @@ export default function PokerBotPage() {
               <h2 className="text-2xl font-bold font-mono text-primary mb-6">Project Overview</h2>
               <div className="space-y-6 text-muted-foreground font-mono">
                 <p>
-                  The Autonomous Poker Bot is an advanced AI system that combines game theory optimal (GTO) strategies 
-                  with machine learning-based opponent modeling to achieve consistent profitability in online poker games. 
-                  The system processes millions of hands to identify optimal play patterns.
+                  I built an AI poker bot that actually wins money. It combines mathematical optimal play 
+                  with machine learning to read opponents. After analyzing millions of hands, 
+                  it consistently beats other players.
                 </p>
 
                 <h3 className="text-xl font-semibold text-foreground">Key Features</h3>
@@ -90,26 +90,26 @@ export default function PokerBotPage() {
                   <li>Risk management system with bankroll protection mechanisms</li>
                 </ul>
 
-                <h3 className="text-xl font-semibold text-foreground">Technical Implementation</h3>
+                <h3 className="text-xl font-semibold text-foreground">How I Built It</h3>
                 <p>
-                  The system uses PyTorch neural networks for opponent classification and hand strength evaluation, 
-                  combined with a PostgreSQL database storing millions of hand histories for pattern analysis. 
-                  Redis caching ensures sub-second decision making during live play.
+                  I used PyTorch neural networks to classify opponents and evaluate hands. 
+                  PostgreSQL stores millions of hand histories for pattern analysis. 
+                  Redis caching makes decisions lightning-fast during live games.
                 </p>
 
-                <h3 className="text-xl font-semibold text-foreground">Challenges Overcome</h3>
+                <h3 className="text-xl font-semibold text-foreground">What I Learned</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Balancing GTO play with exploitative strategies against weak opponents</li>
-                  <li>Processing massive datasets of poker hands for training and analysis</li>
-                  <li>Implementing real-time decision making under strict time constraints</li>
-                  <li>Managing variance and ensuring long-term profitability</li>
+                  <li>When to play perfect math vs. exploiting weak players</li>
+                  <li>Processing millions of poker hands without crashing servers</li>
+                  <li>Making split-second decisions under pressure</li>
+                  <li>Managing poker variance to stay profitable long-term</li>
                 </ul>
 
-                <h3 className="text-xl font-semibold text-foreground">Performance Results</h3>
+                <h3 className="text-xl font-semibold text-foreground">Results</h3>
                 <p>
-                  Over 50,000 hands played, the bot achieved a consistent 2.1 BB/100 win rate with 95% confidence 
-                  intervals. The system successfully identified and exploited over 200 unique opponent patterns, 
-                  demonstrating robust performance across different game conditions.
+                  After 50,000+ hands, the bot wins at 2.1 BB/100 with 95% confidence. 
+                  It identified and exploited over 200 different opponent patterns. 
+                  Bottom line: it makes money consistently.
                 </p>
               </div>
             </section>
