@@ -66,7 +66,7 @@ export default function PokerBotPage() {
                   poster="/bender-futurama-poker.jpg"
                 >
                   <source src="/placeholder-video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
+                  Coming Soon!
                 </video>
               </div>
             </section>
@@ -123,15 +123,11 @@ export default function PokerBotPage() {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Duration</span>
-                  <span className="font-mono">8 months</span>
+                  <span className="font-mono">4 months</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Lines of Code</span>
-                  <span className="font-mono">~4,500</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground font-mono">Win Rate</span>
-                  <span className="font-mono text-primary">2.1 BB/100</span>
+                  <span className="font-mono">~2,500</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Status</span>
