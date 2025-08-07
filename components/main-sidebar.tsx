@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { FileText, FolderKanban, GalleryVerticalEnd, Home, User2, Github, Linkedin, Mail } from "lucide-react"
+import { FileText, FolderKanban, GalleryVerticalEnd, Home, User2, Github, Linkedin, Mail } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 import {
@@ -33,11 +33,11 @@ export function MainSidebar() {
       href: "#projects",
       icon: FolderKanban,
     },
-    {
-      name: "Blog",
-      href: "#blog",
-      icon: GalleryVerticalEnd,
-    },
+    // {
+    //   name: "Blog",
+    //   href: "#blog",
+    //   icon: GalleryVerticalEnd,
+    // },
     {
       name: "Resume",
       href: "#resume",
@@ -57,7 +57,7 @@ export function MainSidebar() {
           <SidebarMenu>
             {menuItems.map((item) => (
               <SidebarMenuItem key={item.name}>
-                <SidebarMenuButton asChild tooltip={item.name}>
+                <SidebarMenuButton asChild tooltip={item.name} className="hover-highlight">
                   <Link href={item.href}>
                     <item.icon />
                     <span>{item.name}</span>
@@ -70,23 +70,23 @@ export function MainSidebar() {
         <SidebarFooter className="pb-6">
           <div className="text-center text-xs text-muted-foreground group-data-[collapsible=icon]:hidden mb-4 font-mono">
             <p>Thomas Zeng</p>
-            <p>CS Student & Developer</p>
+            <p>Student & Developer</p>
           </div>
           <div className="flex gap-2 group-data-[collapsible=icon]:gap-1 flex-row items-start">
             <Link href="https://github.com/thomasz5" target="_blank" rel="noopener noreferrer">
-              <Button size="icon" variant="ghost" className="h-8 w-8">
+              <Button size="icon" variant="ghost" className="h-8 w-8 hover-icon-glow">
                 <Github className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
             <Link href="https://www.linkedin.com/in/thomasz5" target="_blank" rel="noopener noreferrer">
-              <Button size="icon" variant="ghost" className="h-8 w-8">
+              <Button size="icon" variant="ghost" className="h-8 w-8 hover-icon-glow">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
             <Link href="mailto:thomaszeng05@gmail.com">
-              <Button size="icon" variant="ghost" className="h-8 w-8">
+              <Button size="icon" variant="ghost" className="h-8 w-8 hover-icon-glow">
                 <Mail className="h-4 w-4" />
                 <span className="sr-only">Email</span>
               </Button>

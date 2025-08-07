@@ -105,3 +105,36 @@
     transform: translateY(0);
   }
 }
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Sidebar hover highlight utilities */
+@layer components {
+  .hover-highlight {
+    transition: background-color 150ms ease, box-shadow 150ms ease, color 150ms ease, transform 150ms ease;
+    border-radius: 0.5rem;
+  }
+  .hover-highlight:hover {
+    background-color: hsl(262 83% 58% / 0.14); /* purple tint */
+    color: hsl(262 83% 58%);                  /* purple text/icon */
+    box-shadow: 0 0 0 1px hsl(262 83% 58% / 0.35), 0 0 14px hsl(262 83% 58% / 0.35);
+    transform: translateZ(0); /* GPU hint */
+  }
+
+  .hover-icon-glow {
+    transition: background-color 150ms ease, box-shadow 150ms ease, color 150ms ease, transform 150ms ease;
+    border-radius: 0.5rem;
+  }
+  .hover-icon-glow:hover {
+    background-color: hsl(262 83% 58% / 0.18);
+    color: hsl(262 83% 58%);
+    box-shadow: 0 0 12px hsl(262 83% 58% / 0.55);
+    transform: scale(1.07);
+  }
+}
