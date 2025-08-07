@@ -7,6 +7,7 @@ import { SkillBadge } from "@/components/skill-badge"
 import { MainSidebar } from "@/components/main-sidebar"
 import { TypewriterText } from "@/components/typewriter-text"
 import { InteractiveBackground } from "@/components/interactive-background"
+import { RevealOnScroll } from "@/components/reveal-on-scroll"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
 
           {/* Hero Section */}
           <section className="py-12 md:py-24 px-8 max-w-7xl mx-auto text-center lg:py-72 relative z-10">
+            <RevealOnScroll>
             <div className="flex flex-col gap-8 md:gap-12 items-center md:flex-col">
               <div className="flex-1 space-y-4">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-mono">
@@ -42,6 +44,7 @@ text="UW ACMS and Informatics Student "
               </div>
               <div className="flex-1 flex justify-center"></div>
             </div>
+            </RevealOnScroll>
           </section>
 
           {/* About Section */}
@@ -49,6 +52,7 @@ text="UW ACMS and Informatics Student "
             id="about"
             className="py-8 md:py-16 lg:py-20 px-6 max-w-6xl mx-auto section-gradient rounded-2xl my-8 relative z-10"
           >
+          <RevealOnScroll>
             <div className="space-y-4 md:space-y-8">
               <div className="flex flex-col items-center space-y-3 text-center">
                 <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-mono text-gradient">
@@ -87,10 +91,13 @@ text="UW ACMS and Informatics Student "
                 </div>
               </div>
             </div>
-          </section>
+          </RevealOnScroll>
+        </section>
+          
 
           {/* Projects Section */}
-          <section id="projects" className="py-12 md:py-24 lg:py-32 relative z-10">
+         <section id="projects" className="py-12 md:py-24 lg:py-32 relative z-10">
+            <RevealOnScroll>
             <div className="px-8 max-w-7xl mx-auto space-y-6 md:space-y-12">
               <div className="flex flex-col items-center space-y-4 text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-mono text-gradient">
@@ -140,6 +147,7 @@ text="UW ACMS and Informatics Student "
                 </Button>
               </div>
             </div>
+            </RevealOnScroll>
           </section>
 
           {/* Blog Section - Commented Out */}
@@ -252,6 +260,7 @@ text="UW ACMS and Informatics Student "
 
           {/* Resume Section */}
           <section id="resume" className="py-8 md:py-16 lg:py-20 px-8 max-w-7xl mx-auto relative z-10">
+            <RevealOnScroll>
             <div className="space-y-4 md:space-y-8">
               <div className="flex flex-col items-center space-y-4 text-center">
                 <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-mono text-gradient">
@@ -373,10 +382,12 @@ text="UW ACMS and Informatics Student "
                 </Button>
               </div>
             </div>
+            </RevealOnScroll>
           </section>
 
           {/* Skills Section */}
           <section id="skills" className="py-8 md:py-16 lg:py-20 section-gradient rounded-2xl my-8 relative z-10">
+            <RevealOnScroll>
             <div className="px-6 max-w-6xl mx-auto space-y-4 md:space-y-8">
               <div className="flex flex-col items-center space-y-3 text-center">
                 <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-mono text-gradient">
@@ -434,6 +445,7 @@ text="UW ACMS and Informatics Student "
                 </div>
               </div>
             </div>
+            </RevealOnScroll>
           </section>
 
           {/* Footer */}

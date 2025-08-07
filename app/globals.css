@@ -91,4 +91,17 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  /* Scroll reveal utility */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 250ms ease-out,
+      transform 350ms ease-out;
+    will-change: opacity, transform;
+  }
+  .reveal[data-in-view="true"] {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
