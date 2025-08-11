@@ -24,17 +24,16 @@ export default function PokerBotPage() {
               Autonomous Poker Bot
             </h1>
             <p className="text-xl text-muted-foreground font-mono max-w-3xl">
-              Sophisticated poker AI system that achieved a 2.1 BB/100 win rate against players through 
-              a multi-stage machine learning pipeline combining game theory optimal strategies and opponent modeling.
+              Research-grade poker AI with a modular engine, ML pipeline, and data tooling. The system
+              combines fast hand evaluation, rule-consistent game flow, and neural/heuristic policy heads
+              with opponent-aware features.
             </p>
             <div className="flex flex-wrap gap-2">
               <Badge className="bg-primary/20 text-primary border-primary/30">Python</Badge>
-              <Badge className="bg-primary/20 text-primary border-primary/30">SQL</Badge>
-              <Badge className="bg-primary/20 text-primary border-primary/30">JavaScript</Badge>
               <Badge className="bg-primary/20 text-primary border-primary/30">PyTorch</Badge>
+              <Badge className="bg-primary/20 text-primary border-primary/30">scikit-learn</Badge>
               <Badge className="bg-primary/20 text-primary border-primary/30">PostgreSQL</Badge>
-              <Badge className="bg-primary/20 text-primary border-primary/30">Redis</Badge>
-              <Badge className="bg-primary/20 text-primary border-primary/30">Docker</Badge>
+              <Badge className="bg-primary/20 text-primary border-primary/30">FastAPI </Badge>
             </div>
             <div className="flex gap-4 pt-4">
               <Button asChild className="purple-glow">
@@ -46,7 +45,7 @@ export default function PokerBotPage() {
               <Button variant="outline" asChild className="border-primary/30 hover:border-primary bg-transparent">
                 <Link href="#" target="_blank">
                   <ExternalLink className="mr-2 h-4 w-4" />
-                  Live Demo
+                  Live Demo (coming soon)
                 </Link>
               </Button>
             </div>
@@ -76,25 +75,26 @@ export default function PokerBotPage() {
               <h2 className="text-2xl font-bold font-mono text-primary mb-6">Project Overview</h2>
               <div className="space-y-6 text-muted-foreground font-mono">
                 <p>
-                  I built an AI poker bot that actually wins money. It combines mathematical optimal play 
-                  with machine learning to read opponents. After analyzing millions of hands, 
-                  it consistently beats other players.
+                  The engine implements legal action validation, street progression, blind posting,
+                  and pot tracking. The evaluator supports hand ranking and equity proxies with
+                  correctness-focused tests. The ML layer offers both a lightweight RandomForest
+                  baseline and a PyTorch MLP with a sizing head.
                 </p>
 
                 <h3 className="text-xl font-semibold text-foreground">Key Features</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Game Theory Optimal (GTO) strategy implementation using Nash equilibrium calculations</li>
-                  <li>Machine learning opponent modeling with behavioral pattern recognition</li>
-                  <li>Real-time hand evaluation and betting decision algorithms</li>
-                  <li>Statistical analysis dashboard with performance metrics tracking</li>
-                  <li>Risk management system with bankroll protection mechanisms</li>
+                  <li>Rule-consistent game flow (preflop → showdown) with action validation</li>
+                  <li>Fast 5–7 card evaluation with duplicate-card detection and kicker tie-breaks</li>
+                  <li>Neural and classic ML predictors with legal-action masking</li>
+                  <li>Hand history parsing and feature extraction for training datasets</li>
+                  <li>Extensive tests: unit, integration, and scenario-based</li>
                 </ul>
 
                 <h3 className="text-xl font-semibold text-foreground">How I Built It</h3>
                 <p>
-                  I used PyTorch neural networks to classify opponents and evaluate hands. 
-                  PostgreSQL stores millions of hand histories for pattern analysis. 
-                  Redis caching makes decisions lightning-fast during live games.
+                  Core in Python. PyTorch for neural models; scikit-learn for the baseline. SQLAlchemy
+                  schemas for data storage. Tests via pytest. The code emphasizes clarity, correctness,
+                  and forward-compatibility in data schemas and APIs.
                 </p>
 
                 <h3 className="text-xl font-semibold text-foreground">What I Learned</h3>
@@ -106,11 +106,13 @@ export default function PokerBotPage() {
                 </ul>
 
                 <h3 className="text-xl font-semibold text-foreground">Results</h3>
-                <p>
-                  After 50,000+ hands, the bot wins at 2.1 BB/100 with 95% confidence. 
-                  It identified and exploited over 200 different opponent patterns. 
-                  Bottom line: it makes money consistently.
-                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Test suite: <span className="text-foreground font-semibold">100 passed</span></li>
+                  <li>Recent engine fixes: raise semantics, betting-round completion, total pot tracking</li>
+                  <li>Evaluator upgrades: suit handling (int/char), preflop strength heuristic, compare helper</li>
+                  <li>ML robustness: tensor/ndarray inputs, zero-amount safety fallback, class-prob alignment</li>
+                  <li>Data pipeline: flexible GameContext, resilient hero/action extraction</li>
+                </ul>
               </div>
             </section>
           </div>
@@ -123,15 +125,15 @@ export default function PokerBotPage() {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Duration</span>
-                  <span className="font-mono">4 months</span>
+                  <span className="font-mono">Ongoing</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground font-mono">Lines of Code</span>
-                  <span className="font-mono">~2,500</span>
+                  <span className="text-muted-foreground font-mono">Lines of Code (tracked)</span>
+                  <span className="font-mono">~7,250 total</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Status</span>
-                  <span className="font-mono text-primary">Profitable</span>
+                  <span className="font-mono text-primary">Green</span>
                 </div>
               </div>
             </div>
@@ -155,7 +157,7 @@ export default function PokerBotPage() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold font-mono text-foreground mb-2">Backend & Database</h4>
+                  <h4 className="font-semibold font-mono text-foreground mb-2">Engine & Data</h4>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
                       Python
@@ -169,7 +171,7 @@ export default function PokerBotPage() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold font-mono text-foreground mb-2">Infrastructure</h4>
+                  <h4 className="font-semibold font-mono text-foreground mb-2">Tooling</h4>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
                       Docker
@@ -190,20 +192,16 @@ export default function PokerBotPage() {
               <h3 className="text-lg font-bold font-mono text-primary mb-4">Performance Metrics</h3>
               <div className="space-y-3">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground font-mono">Hands Played</span>
-                  <span className="font-mono">50,000+</span>
+                  <span className="text-muted-foreground font-mono">Eval speed (unit)</span>
+                  <span className="font-mono">~3000 evals/s (test)</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground font-mono">Win Rate</span>
-                  <span className="font-mono text-primary">2.1 BB/100</span>
+                  <span className="text-muted-foreground font-mono">Decision latency</span>
+                  <span className="font-mono">sub-50ms target</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground font-mono">Confidence</span>
-                  <span className="font-mono">95%</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground font-mono">ROI</span>
-                  <span className="font-mono text-primary">+$100</span>
+                  <span className="text-muted-foreground font-mono">Reliability</span>
+                  <span className="font-mono">100/100 tests</span>
                 </div>
               </div>
             </div>
