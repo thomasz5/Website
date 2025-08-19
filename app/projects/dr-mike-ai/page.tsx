@@ -39,7 +39,7 @@ export default function DrMikeAIPage() {
             </div>
             <div className="flex gap-4 pt-4">
               <Button asChild className="purple-glow">
-                <Link href="https://github.com/thomasz5" target="_blank">
+                <Link href="https://github.com/thomasz5/Dr.Mike" target="_blank">
                   <Github className="mr-2 h-4 w-4" />
                   View Code
                 </Link>
@@ -59,7 +59,7 @@ export default function DrMikeAIPage() {
           <div className="lg:col-span-2 space-y-8">
             {/* Project Demo */}
             <section className="section-gradient rounded-3xl p-8">
-              <h2 className="text-2xl font-bold font-mono text-primary mb-6">AI Chatbot Demo</h2>
+              <h2 className="text-2xl font-bold font-mono text-primary mb-6">AI Chatbot Demo - Coming Soon!</h2>
               <div className="aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
                 <video
                   controls
@@ -127,7 +127,7 @@ export default function DrMikeAIPage() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Lines of Code</span>
-                  <span className="font-mono">~2,800</span>
+                  <span className="font-mono">~5,800</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Team Size</span>
@@ -135,7 +135,7 @@ export default function DrMikeAIPage() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Status</span>
-                  <span className="font-mono text-primary">Active</span>
+                  <span className="font-mono text-primary">In Progress</span>
                 </div>
               </div>
             </div>

@@ -37,7 +37,7 @@ export default function PokerBotPage() {
             </div>
             <div className="flex gap-4 pt-4">
               <Button asChild className="purple-glow">
-                <Link href="https://github.com/thomasz5" target="_blank">
+                <Link href="https://github.com/https://github.com/thomasz5/Poker-bot" target="_blank">
                   <Github className="mr-2 h-4 w-4" />
                   View Code
                 </Link>

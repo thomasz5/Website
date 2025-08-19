@@ -117,11 +117,11 @@ export default function RecruitmentIntelligencePage() {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Duration</span>
-                  <span className="font-mono">4 months</span>
+                  <span className="font-mono">2 months</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Lines of Code</span>
-                  <span className="font-mono">~1,200</span>
+                  <span className="font-mono">~2,200</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground font-mono">Team Size</span>
